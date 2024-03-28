@@ -3,13 +3,13 @@ import os
 import pickle
 import sys
 from datetime import datetime
-
+import warnings
+warnings.simplefilter("ignore", UserWarning)
 import pandas as pd
 from androguard.misc import AnalyzeAPK
 from sklearn import metrics
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
-
 
 class APK_Analyser():
     '''
